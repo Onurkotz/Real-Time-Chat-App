@@ -1,5 +1,5 @@
 import React from "react"
-
+import HeadPage from "./components/HeadPage"
 import {ChatProvider} from "./context/ChatContext";
 
 import './App.css';
@@ -7,9 +7,7 @@ import './App.css';
 function App() {
   return (
     <ChatProvider>
-    <div className="App">
-     Merhaba
-    </div>
+    <HeadPage />
     </ChatProvider>
   );
 }
