@@ -24,3 +24,5 @@ function HeadPage() {
 }
 
 export default HeadPage;
+
+// If you see any problem about hgetall function of redis, you shoul install redis 3.0.2.

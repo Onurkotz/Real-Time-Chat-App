@@ -7,7 +7,7 @@ function ChatList() {
   const {messages} = useChat();
   console.log(messages)
   
-  
+  // If the messages is listed two times on the list, you should write <React.Fragment> instead of <React.StrictMode> in the index.js
   return (
     <div className={style.chatList}>
       <div>
