@@ -13,7 +13,7 @@ function ChatList() {
       <div>
       {
         messages.map((item, key) => {
-          return <ChatItem key={key} item={item} />
+          return  <ChatItem key={key} item={item} /> 
         })
       }  
       </div>
