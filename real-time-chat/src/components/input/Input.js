@@ -16,7 +16,7 @@ function Input() {
   };
 
   return (
-    <div>
+    <div style={{textAlign: "center"}}>
       <form onSubmit={handleSubmit}>
         <input
           className={style.textInput}

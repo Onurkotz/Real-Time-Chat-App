@@ -26,3 +26,12 @@ export const subscribeChat = (cb) => {
     cb(message);
   });
 };
+
+// Taking all messages from redis database. Learn
+export const subscribeMessages = (cb) => {
+  if(!socket) return;
+  socket.on("message-list", (message) => {
+    console.log("initial", message);
+    cb(message)
+  })
+}
