@@ -1,4 +1,5 @@
 const shortid = require("shortid");
+var moment = require('moment');
 const _ = require("lodash");
 const redisClient = require("../clients/redis");
 
@@ -14,7 +15,7 @@ Messages.prototype.upsert = function ({ message }) {
 		shortid.generate(),
 		JSON.stringify({
 			message,
-			when: Date.now(),
+			when: moment().format('MMMM Do YYYY, h:mm:ss a'),
 		}),
 		(err) => {
 			if (err) {

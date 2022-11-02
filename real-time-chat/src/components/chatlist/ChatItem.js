@@ -6,6 +6,7 @@ function ChatItem({item}) {
   return (
     <div className={`${style.chatItem} ${item.fromMe ? style.right : ""}`}>
         {item.message}
+        <span>{item.when}</span>
     </div>
   )
 }

@@ -1,46 +1,56 @@
-.chatList{
-    border: 1px solid #ddd;
-    padding: 10px;
-    height: 400px;
-    width: 70%;
-    margin: 40px auto 0 auto;
-    background-color: cornsilk;
-    overflow: hidden;
+.chatList {
+  border: 1px solid #ddd;
+  padding: 10px;
+  height: 600px;
+  width: 70%;
+  margin: 40px auto 0 auto;
+  background-color: rgb(219, 201, 126);
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .chatList > div {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    overflow: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
 
-.textInput{
-    border: 1px solid #ddd;
-    padding: 10px;
-    width: 70%;
-    font-size: 16px;
-    margin-top: 50px;
+.textInput {
+  border: 2px solid rgb(243, 17, 17);
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+  margin-top: 50px;
 }
 
-.chatItem{
-    font-size: 18px;
-    color: black;
-    border-radius: 8px;
-    background: rgb(114, 235, 114);
-    padding: 12px 18px;
-    border: 0.5px solid black;
-    box-shadow: 0 2px 1px black;
-    max-width: 70%;
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 6px;
-    margin-right: auto;
+.chatItem {
+  font-size: 18px;
+  color: black;
+  border-radius: 8px;
+  background: rgb(114, 235, 114);
+  padding: 12px 18px;
+  border: none;
+  box-shadow: 0 0 10px black;
+  max-width: 70%;
+  text-align: left;
+  margin: 0 auto 10px 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
 }
 
-.chatItem.right{
-    margin-right: 0;
-    margin-left: auto;
-    background-color: blue;
-    color: white;
+.chatItem.right {
+  margin-right: 50px;
+  margin-left: auto;
+  background-color: rgb(78, 78, 255);
+  color: white;
+}
+
+.chatItem > span {
+  font-size: 12px;
+}
+
+.chatItem.right > span {
+  font-size: 12px;
 }
